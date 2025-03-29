@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Games Page</title>
+    <title>Experimental Camera Page</title>
     <!-- Sets viewport to the device screen size -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!--Link an external style sheet-->
@@ -11,30 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Tiny5&display=swap" rel="stylesheet">
 </head>
 <style>
-    iframe {
-        width: 600px !important;
-        height: 645px !important;
-        transform: scale(0.6);
-        transform-origin: top left;
-        margin-top: 15px;
-    }
-
     .contents {
-        margin-top: 20px;
+        align-items: normal;
     }
-
-    td, .contents {
-        justify-content: center;
-    }
-
-    .contents a {
-        color: black;
-    }
-
-    .contents tr, td, table {
-        margin-left: 250px !important;
-    }
-    
 </style>
 <!-- body -->
 <body>
@@ -71,7 +50,7 @@
                 </div>
                 <div class="individual_projects">
                     <div><a href="typography_prototypes.html">
-                        <img src="assets/typography.png" style="outline: 10px var(--hotPink) solid">
+                        <img src="assets/typography.png">
                     </a>
                     <figcaption>Interactive Typography Prototypes</figcaption></div>
                     <div><a href="typography.html">
@@ -83,60 +62,33 @@
                     </a>
                     <figcaption>Experimental Camera Prototypes</figcaption></div>
                     <div><a href="camera.html">
-                        <img src="assets/camera_final.png">
+                        <img src="assets/camera_final.png" style="outline: 10px var(--hotPink) solid">
                     </a>
                     <figcaption>Experimental Camera - Four Cuts of Life</figcaption></div>
                 </div>
             </div>
             <div class="description">
                 <div class="title2">
-                    <p>Interactive Typography Prototypes.txt</p>
+                    <p>Experimental Camera - Four Cuts of Life.txt</p>
                     <p class="x" onclick="document.querySelector('.description').style.visibility='hidden';">X</p>
                 </div>
-                <table class="contents">
-                    <tr>
-                        <td>
-                            <a href="https://editor.p5js.org/liaimv/full/GagKhGY6F" target="_blank">Glitch 1 (Link)</a>
-                            <iframe src="https://editor.p5js.org/liaimv/full/GagKhGY6F" ></iframe>
-                        </td>
-                        <td>
-                            <a href="https://editor.p5js.org/liaimv/full/2yN72VQB8" target="blank">Glitch 2 (Link)</a>
-                            <iframe src="https://editor.p5js.org/liaimv/full/2yN72VQB8"></iframe>
-                        </td>
-                        <td>
-                            <a href="https://editor.p5js.org/liaimv/full/MSiWSRezG" target="_blank">Glitch 3 (Link)</a>
-                            <iframe src="https://editor.p5js.org/liaimv/full/MSiWSRezG"></iframe>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="https://editor.p5js.org/liaimv/full/npndwAgft" target="_blank">Flicker 1 (Link)</a>
-                            <iframe src="https://editor.p5js.org/liaimv/full/npndwAgft"></iframe>
-                        </td>
-                        <td>
-                            <a href="https://editor.p5js.org/liaimv/full/6PASE3lfe" target="_blank">Flicker 2 (Link)</a>
-                            <iframe src="https://editor.p5js.org/liaimv/full/6PASE3lfe"></iframe>
-                        </td>
-                        <td>
-                            <a href="https://editor.p5js.org/liaimv/full/r8QSGVzrU" target="_blank">Flicker 3 (Link)</a>
-                            <iframe src="https://editor.p5js.org/liaimv/full/r8QSGVzrU"></iframe>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="https://editor.p5js.org/liaimv/full/-4PboqPhC" target="_blank">Blur 1 (Link)</a>
-                            <iframe src="https://editor.p5js.org/liaimv/full/-4PboqPhC"></iframe>
-                        </td>
-                        <td>
-                            <a href="https://editor.p5js.org/liaimv/full/Mj_S393sP" target="_blank">Blur 2 (Link)</a>
-                            <iframe src="https://editor.p5js.org/liaimv/full/Mj_S393sP"></iframe>
-                        </td>
-                        <td>
-                            <a href="https://editor.p5js.org/liaimv/full/ITPkUg945" target="_blank">Blur 3 (Link)</a>
-                            <iframe src="https://editor.p5js.org/liaimv/full/ITPkUg945"></iframe>
-                        </td>
-                    </tr>
-                </table>
+                <div class="contents">
+                    <a href="https://editor.p5js.org/liaimv/full/zHxAUxhls" target="_blank">Experimental Camera - Four Cuts of Life (Link)</a>
+                    <img src="assets/camera_final.png">
+                    <div class="text">
+                        <h1>Used</h1>
+                        <ul>
+                            <li>p5.js</li>
+                            <li>ml5.js</li>
+                        </ul>
+                        <h1>Description</h1>
+                        <p>For this experimental camera, I decided to create one that represents the four stages of life: childhood, adulthood, elderhood, and death. I first got this idea from thinking about the photobooths that print out four pictures. In Korea, there is a popular photobooth called 인생네컷 (Four Cuts of Life) and I thought it would be interesting to visually interpret its name. For the layout, I decided to frame it on a film strip to make it feel like a timeline--a reel playing the story of a person's life, each frame capturing a distinct stage and emotion.</p>
+                        <p>For childhood, I decided to make the camera heavily pixelated, like a retro video game, to evoke nostalgia and a playful, child-like energy. Also, I increased the brigtness to reflect innocence and purity. Finally, I made the camera leave a trail whenever you move to express how we don't really have much memory from our childhood; we only have blurry and fragmented ones.</p>
+                        <p>For adulthood, I tried to represent the thrill and fleeting excitement of youth by making the camera evoke a nightclub atmosphere with flashing and changing colors.</p>
+                        <p>For elderhood, I used cycling numbers to express the idea of running out of time. The flickering effect reinforces this, representing memory loss, instability, and the gradual decay of health.</p>
+                        <p>Lastly, for death, I decided to cover the eyes to symbolize the loss of one's soul--drawing from the saying, 'the eyes are the windows to the soul.' For visual effects, I added a sepia tint and grainy texture to make it look like an old, fading photo. It reflect how, after death, a person gradually slips from memory, becoming part of the distant past.</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
